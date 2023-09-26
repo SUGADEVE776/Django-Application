@@ -19,12 +19,12 @@ hooks:
       - location: scripts/python.sh
         timeout: 300
         runas: ubuntu
-      # - location: scripts/gunicorn.sh
-      #   timeout: 300
-      #   runas: ubuntu
-      # - location: scripts/nginx.sh
-      #   timeout: 300
-      #   runas: ubuntu
+      - location: scripts/gunicorn.sh
+        timeout: 300
+        runas: ubuntu
+      - location: scripts/nginx.sh
+        timeout: 300
+        runas: ubuntu
   ApplicationStop:
       - location: scripts/stop_app.sh
         timeout: 300
